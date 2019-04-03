@@ -13,6 +13,7 @@
 		EDF12EA62254928B0090512A /* Note.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EDF12EA42254928B0090512A /* Note.xcdatamodeld */; };
 		EDF12EA82254928C0090512A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDF12EA72254928C0090512A /* Assets.xcassets */; };
 		EDF12EAB2254928C0090512A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDF12EA92254928C0090512A /* LaunchScreen.storyboard */; };
+		EDF12EB3225498DF0090512A /* NoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF12EB2225498DF0090512A /* NoteViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		EDF12EA72254928C0090512A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EDF12EAA2254928C0090512A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EDF12EAC2254928C0090512A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDF12EB2225498DF0090512A /* NoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				EDF12E9D2254928B0090512A /* AppDelegate.swift */,
 				EDF12E9F2254928B0090512A /* ViewController.swift */,
 				EDF12EA12254928B0090512A /* Main.storyboard */,
+				EDF12EB2225498DF0090512A /* NoteViewController.swift */,
 				EDF12EA72254928C0090512A /* Assets.xcassets */,
 				EDF12EA92254928C0090512A /* LaunchScreen.storyboard */,
 				EDF12EAC2254928C0090512A /* Info.plist */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDF12EB3225498DF0090512A /* NoteViewController.swift in Sources */,
 				EDF12EA62254928B0090512A /* Note.xcdatamodeld in Sources */,
 				EDF12EA02254928B0090512A /* ViewController.swift in Sources */,
 				EDF12E9E2254928B0090512A /* AppDelegate.swift in Sources */,

@@ -8,12 +8,13 @@
 
 import UIKit
 
+var name = [String]()
+var myIndex = 0
+
 class ViewController: UIViewController , UITableViewDataSource, UITableViewDelegate {
     
     
     @IBOutlet weak var tableView: UITableView!
-    var name = [String]()
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,7 +36,7 @@ class ViewController: UIViewController , UITableViewDataSource, UITableViewDeleg
         }
         let saveAction = UIAlertAction(title: "Save", style: .default) { (action: UIAlertAction) -> Void in
             let textField = alert.textFields!.first
-            self.name.append(textField!.text!)
+            name.append(textField!.text!)
             self.tableView.reloadData()
         }
         alert.addAction(saveAction)
@@ -54,6 +55,19 @@ class ViewController: UIViewController , UITableViewDataSource, UITableViewDeleg
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         cell.textLabel?.text = name[indexPath.row]
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        myIndex = indexPath.row
+        tableView.deselectRow(at: indexPath, animated: true)
+        performSegue(withIdentifier: "Segue", sender: self)
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == UITableViewCellEditingStyle.delete {
+            name.remove(at: indexPath.row)
+            tableView.reloadData()
+        }
     }
     
     
